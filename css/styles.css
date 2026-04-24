@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    padding: 30px;
+    font-size: 0.70rem;
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#titulo-h1 {
+    font-size: 1.5rem;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: row;
+
+}
+
+.contenedor {
+    margin: 2px;
+    padding: 0 20px;
+    border-radius: 12px;
+
+}
+
+#instrucciones {
+    display: flex;
+    gap: 10px;
+}
+
+#instrucciones li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 50px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    
+}
+
+#seleccion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#boton-seleccion {
+    flex: 1;
+}
+
+#contenedor-paleta {
+    flex: 2;
+}
+
+/*article {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 70%;
+}*/
+
+article ul {
+    padding-left: 8px;
+}
+
+article ul li {
+    margin: 10px;
+}
+
+article ul li span {
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+
+#desplegar {
+    padding: 12px 18px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#desplegar:hover {
+    background-color: #444;
+}
+
+#opciones {
+    list-style: none;
+    display: none;
+    padding-right: 15px;
+}
+
+#opciones li {
+    background-color: #eeeeee;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#opciones li:hover {
+    background-color: #dcdcdc;
+}
+
+.paleta {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;
+}
+
+.paleta div {
+    min-height: 16px;
+    border-radius: 12px;
+    padding: 5px;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    word-break: break-word;
+}
+
+#generar-paleta {
+    padding: 12px 14px;
+    border: none;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px 0px 5px 0px;
+    box-shadow: 0 1px 1px rgb(206, 195, 191);
+}
+
+#generar-paleta:hover {
+    background-color: #5947c7;
+}
+
+@media (max-width: 768px) {
+    .paleta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .paleta {
+        grid-template-columns: 1fr;
+    }
+}

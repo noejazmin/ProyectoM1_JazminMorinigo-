@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Colores</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1 id="titulo-h1">Generador de Paletas</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="contenedor">
+                <article>
+                    <ul id="instrucciones">
+                        <li><span>Paso 1</span> Selecciona la cantidad de colores.</li>
+                        <li><span>Paso 2</span> Haz click en el botón "Generar nueva paleta de colores".</li>
+                        <li><span>Paso 3</span> Sigue probando combinaciones aleatorias.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="contenedor" id="seleccion">
+                <article>
+                    <div id="boton-seleccion">
+                        <button id="desplegar">Seleccionar opciones</button>
+                        <ul id="opciones">
+                            <li data-cantidad="6">6 colores</li>
+                            <li data-cantidad="8">8 colores</li>
+                            <li data-cantidad="9">9 colores</li>
+                        </ul>
+                    </div>
+
+                    <div id="boton-generar">
+                        <button id="generar-paleta">Generar nueva paleta</button>
+                    <div>
+
+                </article>
+
+                <div id="contenedor-paleta">    
+                    <article class="paleta">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </article>
+                </div>
+            
+            </div>
+        </section>
+    </main>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
