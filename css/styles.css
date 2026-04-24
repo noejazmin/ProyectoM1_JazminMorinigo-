@@ -168,38 +168,7 @@ article ul li span {
 }
 
 
-#desplegar {
-    padding: 12px 18px;
-    border: none;
-    background-color: #222;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 15px;
-}
 
-#desplegar:hover {
-    background-color: #444;
-}
-
-#opciones {
-    list-style: none;
-    display: none;
-    padding-right: 15px;
-}
-
-#opciones li {
-    background-color: #eeeeee;
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#opciones li:hover {
-    background-color: #dcdcdc;
-}
 
 .paleta {
     display: grid;
