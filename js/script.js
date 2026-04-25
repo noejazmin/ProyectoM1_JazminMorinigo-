@@ -23,6 +23,7 @@ const paleta = document.querySelector(".paleta");
 const cajasColor = document.querySelectorAll(".paleta div");
 const botonGenerar = document.getElementById("generar-paleta");
 const opcionesFormato = document.querySelectorAll("input[name='formato']");
+const feedbackFormato = document.getElementById("feedback-formato");
 
 let cantidadSeleccionada = 0;
 let coloresGuardados = [];
@@ -148,6 +149,8 @@ botonGenerar.addEventListener("click", function() {
 
 opcionesFormato.forEach(function(opcion) {
     opcion.addEventListener("change", function() {
+        feedbackFormato.textContent = "Formato seleccionado: " + opcion.value.toUpperCase();
+
         if (coloresGuardados.length > 0) {
             mostrarPaleta();
         }
