@@ -117,7 +117,8 @@ function mostrarPaleta() {
 
             caja.classList.remove("oculto");
             caja.style.backgroundColor = color.hex;
-            caja.textContent = color[formato];
+            caja.textContent = "";
+            caja.setAttribute("data-codigo", color[formato]);
         } else {
             caja.classList.add("oculto");
         }
@@ -155,14 +156,14 @@ opcionesFormato.forEach(function(opcion) {
 
 cajasColor.forEach(function(caja) {
     caja.addEventListener("click", function() {
-        const codigo = caja.textContent;
+        const codigo = caja.getAttribute("data-codigo");
 
         navigator.clipboard.writeText(codigo);
 
-    caja.textContent = "Copiado ✔";
+        caja.classList.add("copiado");
 
-    setTimeout(function () {
-        mostrarPaleta();
-    }, 800);
-        });
+        setTimeout(function () {
+            caja.classList.remove("copiado");
+        }, 900);
+    });
 });
