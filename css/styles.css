@@ -221,21 +221,23 @@ article ul li span {
     content: attr(data-codigo);
     display: block;
     width: 100%;
-    background-color: #f3eee7;
+    background-color: #ffffff;
     padding: 13px 2px;
     border-right: 1px solid rgba(58, 51, 45, 0.25);
+    border-left: 1px solid rgba(58, 51, 45, 0.25);
     font-family: Arial, sans-serif;
-    font-size: 0.20rem;
+    font-size: 0.3rem;
     font-weight: 700;
     letter-spacing: 0.2px;
-    color: #3a332d;
+    color: #5947c7;
     text-align: center;
     white-space: nowrap;
     transition: 0.3s ease;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
+    box-sizing: border-box;
 }
 
 .paleta div:hover {
@@ -245,11 +247,11 @@ article ul li span {
 }
 
 .paleta div:hover::after {
-    background-color: #ebe3d8;
-    font-size: 0.25rem;
-    font-weight: 600;
+    background-color: #ffffff;
+    font-size: 0.3rem;
+    font-weight: 700;
     letter-spacing: 0.2px;
-    color: #1f1f1f;
+    color: #5947c7;
 }
 
 
@@ -259,9 +261,10 @@ article ul li span {
 
 .paleta div.copiado::after {
     content: "Copiado ✔";
-    background-color: #e8ddd0;
-    color: #3a332d;
-    font-weight: 600;
+    background-color: #6d5bc6;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.4rem;
 }
 
 #formatos-color {
