@@ -14,6 +14,7 @@ checks.forEach(function(check) {
 
         cantidadSeleccionada = parseInt(check.value, 10);
         feedback.textContent = "Seleccionaste: " + check.value + " colores";
+        feedback.style.color = "green";
     });
 });
 
@@ -125,7 +126,8 @@ function mostrarPaleta() {
 
 botonGenerar.addEventListener("click", function() {
     if (cantidadSeleccionada === 0) {
-        feedback.textContent = "Debes seleccionar primero la cantidad de colores.";
+        feedback.textContent = "⚠️ Seleccioná primero una cantidad de colores";
+        feedback.style.color = "red";
         return;
     }
 
@@ -136,6 +138,10 @@ botonGenerar.addEventListener("click", function() {
     }
 
     contenedorPaleta.style.display = "block";
+
+    setTimeout(function () {
+        contenedorPaleta.classList.add("mostrar");
+    }, 10);
     mostrarPaleta();
 });
 
@@ -152,5 +158,11 @@ cajasColor.forEach(function(caja) {
         const codigo = caja.textContent;
 
         navigator.clipboard.writeText(codigo);
-    });
+
+    caja.textContent = "Copiado ✔";
+
+    setTimeout(function () {
+        mostrarPaleta();
+    }, 800);
+        });
 });
