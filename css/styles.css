@@ -141,16 +141,6 @@ section {
     flex: 2;
 }
 
-/*article {
-    display: flex;
-    justify-content: center;
-    margin: 2px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    width: 70%;
-}*/
 
 article ul {
     padding-left: 8px;
@@ -166,8 +156,6 @@ article ul li span {
     padding-top: 1px;
     padding-bottom: 2px;
 }
-
-
 
 
 .paleta {
@@ -192,14 +180,12 @@ article ul li span {
     font-weight: bold;
     color: #222;
     cursor: pointer;
-    transition: transform 0.2s ease;
-    overflow: hidden;
+    position: relative;
+    overflow: visible;
+    transition: 0.3s ease;
+    transform-origin: bottom center;
 }
 
-.paleta div:hover {
-    transform: scale(1.03);
-    z-index: 2;
-}
 
 .paleta div.oculto {
     display: none;
@@ -208,18 +194,38 @@ article ul li span {
 .paleta div::after {
     content: attr(data-codigo);
     display: block;
-    background-color: #f3eee7;
     width: 100%;
-    padding: 13px 3px;
-    border-right: 1px solid rgba(58, 51, 45, 0.18);
+    background-color: #f3eee7;
+    padding: 13px 2px;
+    border-right: 1px solid rgba(58, 51, 45, 0.25);
     font-family: Arial, sans-serif;
     font-size: 0.20rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     color: #3a332d;
     text-align: center;
     white-space: nowrap;
+    transition: 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.paleta div:hover {
+    transform: translateY(0px) scale(1.08);
+    z-index: 20;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.paleta div:hover::after {
+    background-color: #ebe3d8;
+    font-size: 0.25rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #1f1f1f;
+}
+
 
 .paleta div:last-child::after {
     border-right: none;
@@ -234,7 +240,7 @@ article ul li span {
 
 #formatos-color {
     background-color: #f8f8f8;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 16px 24px;
     margin-top: 20px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
