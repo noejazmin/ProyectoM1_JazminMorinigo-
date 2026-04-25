@@ -14,7 +14,6 @@ checks.forEach(function(check) {
 
         cantidadSeleccionada = parseInt(check.value, 10);
         feedback.textContent = "Seleccionaste: " + check.value + " colores";
-        feedback.style.color = "green";
     });
 });
 
@@ -129,7 +128,6 @@ function mostrarPaleta() {
 botonGenerar.addEventListener("click", function() {
     if (cantidadSeleccionada === 0) {
         feedback.textContent = "⚠️ Seleccioná primero una cantidad de colores";
-        feedback.style.color = "red";
         return;
     }
 
