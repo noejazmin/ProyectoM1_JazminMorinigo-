@@ -72,6 +72,13 @@ body {
     padding-top: 5px;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #6a5eb9;
+    font-weight: bold;
+}
+
 section {
     max-width: 1000px;
     margin: 0 auto;
@@ -132,10 +139,11 @@ section {
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
+    color: #6d5bc6;
 }
 
 .opcion:hover {
-    background-color: #e8ddd0;
+    background-color: rgba(213, 206, 241, 0.75);
     transform: scale(1.03);
 }
 
@@ -145,8 +153,8 @@ section {
 }
 
 .opcion.seleccionada {
-    background-color: #d6c3aa;
-    border-color: #8a6f4d;
+    background-color: rgba(213, 206, 241, 0.75);
+    border-color:#6d5bc6;
 }
 
 #feedback {
@@ -187,7 +195,7 @@ article ul li span {
 }
 
 .paleta div {
-    min-height: 208px;
+    min-height: 180px;
     border-radius: 0;
     padding: 0;
     display: flex;
