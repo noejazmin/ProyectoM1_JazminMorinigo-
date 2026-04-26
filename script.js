@@ -143,6 +143,8 @@ botonGenerar.addEventListener("click", function() {
         contenedorPaleta.classList.add("mostrar");
     }, 10);
     mostrarPaleta();
+
+    document.getElementById("seleccion").classList.add("modo-activo");
 });
 
 opcionesFormato.forEach(function(opcion) {

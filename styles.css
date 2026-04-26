@@ -122,6 +122,7 @@ section {
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    
 }
 
 .opcion {
@@ -357,6 +358,10 @@ article ul li span {
         padding: 0;
     }
 
+    .opcion {
+        width: 100%;
+    }
+
     #seleccion {
         display: contents;
     }
@@ -395,6 +400,35 @@ article ul li span {
     #formatos-color {
         width: 100%;
     }
+}
+
+@media (min-width: 1024px) {
+
+    #seleccion {
+        width: 100%;
+    }   
+    #seleccion.modo-activo {
+        flex-direction: row;
+        align-items: flex-start;
+    }   
+    #seleccion.modo-activo #seleccion-colores {
+        max-width: 260px;
+    }   
+    #seleccion.modo-activo #boton-generar {
+        width: 260px;
+    }   
+
+    #seleccion-colores {
+        width: 100vh;
+    margin: 0 auto;
+    }   
+    #generar-paleta {
+        display: block;
+        width: 520px;
+        max-width: 100%;
+        margin: 25px auto 0;
+    }
+
 }
 
 
