@@ -110,8 +110,12 @@ function obtenerFormatoSeleccionado() {
 
 function mostrarPaleta() {
     const formato = obtenerFormatoSeleccionado();
-    
-    paleta.style.gridTemplateColumns = "repeat(" + cantidadSeleccionada + ", 1fr)";
+
+        if (window.innerWidth >= 1024) {
+        paleta.style.gridTemplateColumns = "repeat(" + cantidadSeleccionada + ", 1fr)";
+        } else {
+            paleta.style.gridTemplateColumns = "repeat(3, 1fr)";
+        }
 
     cajasColor.forEach(function(caja, indice) {
         if (indice < cantidadSeleccionada) {
