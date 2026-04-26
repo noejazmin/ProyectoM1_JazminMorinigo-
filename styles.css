@@ -69,7 +69,7 @@ body {
     font-weight: bold;
     letter-spacing: 3px;
     word-spacing: 10px;
-    padding-top: 5px;
+    padding-top: 35px;
 }
 
 h2 {
@@ -355,6 +355,11 @@ article ul li span {
         padding: 0;
     }
 
+    h1 {
+        border-bottom: 2px solid #a59ed0;
+        padding-bottom: 15px;
+    }
+
     .opcion {
         width: 100%;
     }
@@ -371,6 +376,7 @@ article ul li span {
         flex-direction: column;
         gap: 20px;
         margin-top: 8px;
+        
     }
 
     #instrucciones li {
@@ -392,6 +398,14 @@ article ul li span {
 
     .paleta div {
         min-height: 180px;
+    }
+
+    .paleta div::after {
+        font-size: clamp(0.60rem, 0.7vw, 0.6rem);
+        padding: 16px 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     #formatos-color {
@@ -443,6 +457,7 @@ article ul li span {
     #seleccion-colores {
         width: 100vh;
         margin: 0 auto;
+        margin-top: 50px;
     }   
     #generar-paleta {
         display: block;
@@ -462,6 +477,19 @@ article ul li span {
     #instrucciones li{
         padding: 10px 40px;
     }
+
+    .paleta div::after {
+    font-size: clamp(0.60rem, 0.7vw, 0.6rem);
+    padding: 16px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+    .paleta div.rgba-padding::after {
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
 }
 
@@ -514,7 +542,7 @@ article ul li span {
     }
 
     .paleta div::after {
-        font-size: 0.25rem;
+        font-size: clamp(0.60rem, 0.7vw, 0.6rem);
         padding: 10px 2px;
     }
 

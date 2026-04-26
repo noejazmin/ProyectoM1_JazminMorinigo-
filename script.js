@@ -110,10 +110,18 @@ function obtenerFormatoSeleccionado() {
 
 function mostrarPaleta() {
     const formato = obtenerFormatoSeleccionado();
+    
+    paleta.style.gridTemplateColumns = "repeat(" + cantidadSeleccionada + ", 1fr)";
 
     cajasColor.forEach(function(caja, indice) {
         if (indice < cantidadSeleccionada) {
             const color = coloresGuardados[indice];
+
+            if (formato === "rgba") {
+                caja.classList.add("rgba-padding");
+            } else {
+                caja.classList.remove("rgba-padding");
+            }
 
             caja.classList.remove("oculto");
             caja.style.backgroundColor = color.hex;
