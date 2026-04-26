@@ -482,7 +482,7 @@ article ul li span {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     section {
         max-width: 1400px;
@@ -526,13 +526,13 @@ article ul li span {
     #seleccion-colores {
         width: 100vh;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 15px;
     }   
     #generar-paleta {
         display: block;
         width: 520px;
         max-width: 100%;
-        margin: 25px auto 0;
+        margin: 15px auto 15px;
     }
     
     #instrucciones {
