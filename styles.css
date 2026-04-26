@@ -222,7 +222,9 @@ article ul li span {
     border-right: 1px solid rgba(58, 51, 45, 0.25);
     border-left: 1px solid rgba(58, 51, 45, 0.25);
     font-family: Arial, sans-serif;
-    font-size: 0.3rem;
+    font-size: clamp(0.60rem, 0.7vw, 0.6rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: 700;
     letter-spacing: 0.2px;
     color: #5947c7;
@@ -397,12 +399,12 @@ article ul li span {
     }
 
     .paleta div {
-        min-height: 180px;
+        min-height: 150px;
     }
 
     .paleta div::after {
         font-size: clamp(0.60rem, 0.7vw, 0.6rem);
-        padding: 16px 4px;
+        padding: 6px 4px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -486,6 +488,12 @@ article ul li span {
     text-overflow: ellipsis;
     }
 
+    .paleta div:hover {
+    transform: translateY(0px) scale(1.08);
+    z-index: 20;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
     .paleta div.rgba-padding::after {
     padding-left: 8px;
     padding-right: 8px;
@@ -537,12 +545,14 @@ article ul li span {
         grid-auto-flow: initial;
     }
 
+
+
     .paleta div {
         min-height: 120px;
     }
 
     .paleta div::after {
-        font-size: clamp(0.60rem, 0.7vw, 0.6rem);
+        font-size: clamp(0.70rem, 0.7vw, 0.6rem);
         padding: 10px 2px;
     }
 

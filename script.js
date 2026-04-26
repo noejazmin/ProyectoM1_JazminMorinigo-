@@ -111,7 +111,7 @@ function obtenerFormatoSeleccionado() {
 function mostrarPaleta() {
     const formato = obtenerFormatoSeleccionado();
 
-        if (window.innerWidth >= 1024) {
+        if (window.innerWidth >= 481) {
         paleta.style.gridTemplateColumns = "repeat(" + cantidadSeleccionada + ", 1fr)";
         } else {
             paleta.style.gridTemplateColumns = "repeat(3, 1fr)";
