@@ -167,9 +167,6 @@ section {
 }
 
 
-article ul {
-    padding-left: 8px;
-}
 
 article ul li {
     margin: 0px 10px 10px 10px;
@@ -404,29 +401,66 @@ article ul li span {
 
 @media (min-width: 1024px) {
 
+    section {
+        max-width: 1400px;
+    }
+
     #seleccion {
         width: 100%;
     }   
     #seleccion.modo-activo {
         flex-direction: row;
         align-items: flex-start;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        margin-top: 40px;
     }   
     #seleccion.modo-activo #seleccion-colores {
-        max-width: 260px;
+        max-width: 300px;
+        width: 100%;
     }   
+
+    #seleccion.modo-activo > article {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
     #seleccion.modo-activo #boton-generar {
-        width: 260px;
-    }   
+        width: 300px;
+    }
+    
+    #seleccion.modo-activo #contenedor-paleta {
+        flex: 1;
+        max-width: 1000px;
+    }
+
+    #seleccion.modo-activo .paleta div {
+        min-height: 210px;
+    }
 
     #seleccion-colores {
         width: 100vh;
-    margin: 0 auto;
+        margin: 0 auto;
     }   
     #generar-paleta {
         display: block;
         width: 520px;
         max-width: 100%;
         margin: 25px auto 0;
+    }
+    
+    #instrucciones {
+        border-bottom: 2px solid #a59ed0;
+        border-top: 2px solid #a59ed0;
+        padding-bottom: 8px;
+        padding-top: 15px;
+
+    }
+
+    #instrucciones li{
+        padding: 10px 40px;
     }
 
 }
