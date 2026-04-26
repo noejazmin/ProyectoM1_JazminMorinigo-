@@ -156,16 +156,10 @@ section {
     border-color:#6d5bc6;
 }
 
-#feedback {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #6d5bc6;
-}
 
 #contenedor-paleta {
     flex: 2;
 }
-
 
 
 article ul li {
@@ -307,6 +301,8 @@ article ul li span {
     font-size: 0.75rem;
     font-weight: bold;
     color: #5947c7;
+    display: flex;
+    justify-content: center;
 }
 
 #feedback.activo,
