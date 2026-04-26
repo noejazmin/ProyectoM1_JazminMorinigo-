@@ -353,134 +353,6 @@ article ul li span {
     background-color: #5947c7;
 }
 
-@media (max-width: 480px) {
-
-    body {
-        padding: 8px;
-    }
-
-    #titulo-h1 {
-        font-size: 1.5rem;
-        word-spacing: 4px;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    section > .contenedor:first-child,
-    #seleccion {
-        width: 100%;
-    }
-
-    #seleccion {
-        flex-direction: column;
-    }
-
-    #instrucciones {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    #instrucciones li {
-        min-height: auto;
-        padding: 18px;
-    }
-
-    .paleta {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-flow: initial;
-    }
-
-    .paleta div {
-        min-height: 120px;
-    }
-
-    .paleta div::after {
-        font-size: clamp(0.70rem, 0.7vw, 0.6rem);
-        padding: 10px 2px;
-    }
-
-    #opciones-formato {
-        flex-direction: column;
-        gap: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        align-items: start;
-    }
-
-    section > .contenedor:first-child {
-        width: 100%;
-        padding: 0;
-    }
-
-    h1 {
-        border-bottom: 2px solid #a59ed0;
-        padding-bottom: 15px;
-    }
-
-    .opcion {
-        width: 100%;
-    }
-
-    #seleccion {
-        display: contents;
-    }
-
-    #seleccion > article {
-        width: 100%;
-    }
-
-    #instrucciones {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 8px;
-        
-    }
-
-    #instrucciones li {
-        min-height: 65px;
-        justify-content: center;
-    }
-
-    #contenedor-paleta {
-        grid-column: 1 / -1;
-        width: 100%;
-        margin-top: 24px;
-    }
-
-    .paleta {
-        display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-auto-flow: initial;
-    }
-
-    .paleta div {
-        min-height: 150px;
-    }
-
-    .paleta div::after {
-        font-size: clamp(0.60rem, 0.7vw, 0.6rem);
-        padding: 6px 4px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    #formatos-color {
-        width: 100%;
-    }
-}
 
 @media (min-width: 768px) {
 
@@ -566,4 +438,133 @@ article ul li span {
     padding-right: 8px;
 }
 
+}
+
+@media (max-width: 768px) {
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+    section > .contenedor:first-child {
+        width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        border-bottom: 2px solid #a59ed0;
+        padding-bottom: 15px;
+    }
+
+    .opcion {
+        width: 100%;
+    }
+
+    #seleccion {
+        display: contents;
+    }
+
+    #seleccion > article {
+        width: 100%;
+    }
+
+    #instrucciones {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 8px;
+        
+    }
+
+    #instrucciones li {
+        min-height: 65px;
+        justify-content: center;
+    }
+
+    #contenedor-paleta {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .paleta {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-flow: initial;
+    }
+
+    .paleta div {
+        min-height: 150px;
+    }
+
+    .paleta div::after {
+        font-size: clamp(0.60rem, 0.7vw, 0.6rem);
+        padding: 6px 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #formatos-color {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 8px;
+    }
+
+    #titulo-h1 {
+        font-size: 1.5rem;
+        word-spacing: 4px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section > .contenedor:first-child,
+    #seleccion {
+        width: 100%;
+    }
+
+    #seleccion {
+        flex-direction: column;
+    }
+
+    #instrucciones {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #instrucciones li {
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .paleta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: initial;
+    }
+
+    .paleta div {
+        min-height: 120px;
+    }
+
+    .paleta div::after {
+        font-size: clamp(0.70rem, 0.7vw, 0.6rem);
+        padding: 10px 2px;
+    }
+
+    #opciones-formato {
+        flex-direction: column;
+        gap: 14px;
+    }
 }
