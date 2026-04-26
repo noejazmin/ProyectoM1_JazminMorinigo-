@@ -294,12 +294,6 @@ article ul li span {
     margin-right: 6px;
 }
 
-/*#feedback-formato {
-    margin-top: 10px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: rgb(107, 95, 185);
-}*/
 
 #feedback,
 #feedback-formato {
@@ -318,7 +312,7 @@ article ul li span {
 #feedback.activo,
 #feedback-formato.activo {
     background-color: rgba(107, 95, 185, 0.1);
-    transform: scale(1.05); /* Pequeño efecto de zoom */
+    transform: scale(1.05);
 }
 
 #contenedor-paleta {
@@ -361,6 +355,63 @@ article ul li span {
 
 #generar-paleta:hover {
     background-color: #5947c7;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 8px;
+    }
+
+    #titulo-h1 {
+        font-size: 1.5rem;
+        word-spacing: 4px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section > .contenedor:first-child,
+    #seleccion {
+        width: 100%;
+    }
+
+    #seleccion {
+        flex-direction: column;
+    }
+
+    #instrucciones {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #instrucciones li {
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .paleta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: initial;
+    }
+
+    .paleta div {
+        min-height: 120px;
+    }
+
+    .paleta div::after {
+        font-size: clamp(0.70rem, 0.7vw, 0.6rem);
+        padding: 10px 2px;
+    }
+
+    #opciones-formato {
+        flex-direction: column;
+        gap: 14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -519,65 +570,4 @@ article ul li span {
     padding-right: 8px;
 }
 
-}
-
-
-/* CELULAR */
-@media (max-width: 480px) {
-
-    body {
-        padding: 8px;
-    }
-
-    #titulo-h1 {
-        font-size: 1.5rem;
-        word-spacing: 4px;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    section > .contenedor:first-child,
-    #seleccion {
-        width: 100%;
-    }
-
-    #seleccion {
-        flex-direction: column;
-    }
-
-    #instrucciones {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    #instrucciones li {
-        min-height: auto;
-        padding: 18px;
-    }
-
-    .paleta {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-flow: initial;
-    }
-
-
-
-    .paleta div {
-        min-height: 120px;
-    }
-
-    .paleta div::after {
-        font-size: clamp(0.70rem, 0.7vw, 0.6rem);
-        padding: 10px 2px;
-    }
-
-    #opciones-formato {
-        flex-direction: column;
-        gap: 14px;
-    }
 }
