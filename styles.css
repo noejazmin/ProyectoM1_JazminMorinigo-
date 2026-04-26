@@ -294,11 +294,31 @@ article ul li span {
     margin-right: 6px;
 }
 
-#feedback-formato {
+/*#feedback-formato {
     margin-top: 10px;
     font-size: 0.75rem;
     font-weight: bold;
-    color: #6a5eb9;
+    color: rgb(107, 95, 185);
+}*/
+
+#feedback,
+#feedback-formato {
+    display: inline-block;
+    background-color: rgba(107, 95, 185, 0.1);
+    border: 1px solid rgba(107, 95, 185, 0.1);
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s ease;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #5947c7;
+}
+
+#feedback.activo,
+#feedback-formato.activo {
+    background-color: rgba(107, 95, 185, 0.1);
+    transform: scale(1.05); /* Pequeño efecto de zoom */
 }
 
 #contenedor-paleta {

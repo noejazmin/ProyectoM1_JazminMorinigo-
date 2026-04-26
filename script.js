@@ -14,6 +14,12 @@ checks.forEach(function(check) {
 
         cantidadSeleccionada = parseInt(check.value, 10);
         feedback.textContent = "Seleccionaste: " + check.value + " colores";
+
+        feedback.classList.add("activo");
+
+        setTimeout(function () {
+            feedback.classList.remove("activo");
+        }, 300);
     });
 });
 
@@ -154,6 +160,7 @@ botonGenerar.addEventListener("click", function() {
     setTimeout(function () {
         contenedorPaleta.classList.add("mostrar");
     }, 10);
+    
     mostrarPaleta();
 
     document.getElementById("seleccion").classList.add("modo-activo");
@@ -162,6 +169,12 @@ botonGenerar.addEventListener("click", function() {
 opcionesFormato.forEach(function(opcion) {
     opcion.addEventListener("change", function() {
         feedbackFormato.textContent = "Formato seleccionado: " + opcion.value.toUpperCase();
+
+        feedbackFormato.classList.add("activo");
+
+        setTimeout(function () {
+            feedbackFormato.classList.remove("activo");
+        }, 300);
 
         if (coloresGuardados.length > 0) {
             mostrarPaleta();
