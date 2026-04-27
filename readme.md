@@ -8,7 +8,7 @@ Aplicación web interactiva que permite generar paletas de colores aleatorias en
 ## 🚀 Instrucciones de uso (Manual de usuario)
 
 1. Seleccioná la cantidad de colores (6, 8 o 9).
-2. Hacé click en el botón **"Generar nueva paleta"**.
+2. Hacé click en el botón **"Generar paleta"**.
 3. Visualizá la paleta generada en pantalla.
 4. Elegí el formato de color (HEX, HSL o RGBA).
 5. Hacé click sobre cualquier color para copiar su código.
@@ -19,9 +19,9 @@ Aplicación web interactiva que permite generar paletas de colores aleatorias en
 
 - **Lenguajes utilizados:** HTML, CSS y JavaScript (sin frameworks).
 - **Arquitectura simple:** Separación de responsabilidades en 3 archivos:
-  - `index.html` → estructura de la app  
-  - `styles.css` → estilos, layout y responsive  
-  - `script.js` → lógica de generación y eventos  
+  - `/docs/index.html` → estructura de la app  
+  - `/css/styles.css` → estilos, layout y responsive  
+  - `/js/script.js` → lógica de generación y eventos  
 - **Generación de colores:**
   - Uso de valores aleatorios RGB.
   - Conversión manual a HSL.
@@ -41,7 +41,7 @@ Aplicación web interactiva que permite generar paletas de colores aleatorias en
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/noejazmin/ProyectoM1_JazminMorinigo-.git
 ```
 ---
 
@@ -74,7 +74,7 @@ Seguí estos pasos aunque no tengas experiencia en programación:
 
 1. Hacé click en el siguiente enlace:
 
-👉 **[VER APLICACIÓN ONLINE](ACA_VAS_A_PONER_TU_LINK_DE_GITHUB_PAGES)**
+👉 **[VER APLICACIÓN ONLINE](https://noejazmin.github.io/ProyectoM1_JazminMorinigo-/)**
 
 2. El sitio se va a abrir automáticamente en tu navegador.
 
