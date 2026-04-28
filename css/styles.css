@@ -239,8 +239,9 @@ article ul li span {
     color: #5947c7;
     font-size: 0.65rem;
     font-weight: 700;
-    padding: 6px 10px;
-    border-radius: 999px;
+    padding: 6px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
     opacity: 0;
     pointer-events: none;
@@ -251,13 +252,6 @@ article ul li span {
 .paleta div:hover::before {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
-}
-
-.paleta div.copiado::before {
-    content: "Copiado ✔";
-    opacity: 1;
-    background-color: #6d5bc6;
-    color: #ffffff;
 }
 
 .paleta div:hover {
