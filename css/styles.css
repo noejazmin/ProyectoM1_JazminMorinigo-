@@ -161,7 +161,6 @@ section {
     flex: 2;
 }
 
-
 article ul li {
     margin: 0px 10px 10px 10px;
 }
@@ -172,7 +171,6 @@ article ul li span {
     padding-top: 1px;
     padding-bottom: 2px;
 }
-
 
 .paleta {
     display: grid;
@@ -201,7 +199,6 @@ article ul li span {
     transition: 0.3s ease;
     transform-origin: bottom center;
 }
-
 
 .paleta div.oculto {
     display: none;
@@ -232,6 +229,37 @@ article ul li span {
     box-sizing: border-box;
 }
 
+.paleta div::before {
+    content: "Click para copiar";
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #5947c7;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 999px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.paleta div:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.paleta div.copiado::before {
+    content: "Copiado ✔";
+    opacity: 1;
+    background-color: #6d5bc6;
+    color: #ffffff;
+}
+
 .paleta div:hover {
     transform: translateY(0px) scale(1.08);
     z-index: 20;
@@ -245,7 +273,6 @@ article ul li span {
     letter-spacing: 0.2px;
     color: #5947c7;
 }
-
 
 .paleta div:last-child::after {
     border-right: none;
@@ -287,7 +314,6 @@ article ul li span {
 #formatos-color input {
     margin-right: 6px;
 }
-
 
 #feedback,
 #feedback-formato {
@@ -352,7 +378,6 @@ article ul li span {
 #generar-paleta:hover {
     background-color: #5947c7;
 }
-
 
 @media (min-width: 768px) {
 
@@ -431,13 +456,12 @@ article ul li span {
     transform: translateY(0px) scale(1.08);
     z-index: 20;
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
-}
+    }
 
     .paleta div.rgba-padding::after {
     padding-left: 8px;
     padding-right: 8px;
-}
-
+    }
 }
 
 @media (max-width: 768px) {
